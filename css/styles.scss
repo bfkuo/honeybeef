@@ -1,0 +1,23 @@
+$accent-yellow: #ebc44e;
+$lt-background: #f5f5f5;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.row-header {
+    @include zero-margin(0px, 0px);
+}
+
+.row-content {
+    @include zero-margin(50px, 0px);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.jumbotron {
+    @include zero-margin(70px, 30px);
+    background-color: $accent-yellow;
+    color: white;
+}
